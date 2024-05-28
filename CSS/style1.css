@@ -1,0 +1,95 @@
+img {
+  width: 200px;
+  height: 200px;
+}
+
+/** {
+  outline: 1px #ccc solid;
+  margin: 10px;
+  padding: 10px;
+}
+
+body, nav, main, article {
+  display: flex;
+}
+
+body, article {
+  flex-direction: column;
+}*/
+
+.pencil {
+  color: blue;
+  height: 140px;
+  width: 140px;
+  margin: 10px auto;
+  font-size: 140px;
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+  line-height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 100px 123px;
+}
+
+.pencil {
+  /*-webkit-animation: W 3s infinite linear;*/
+  animation: W 3s infinite linear;
+}
+
+@keyframes W {
+  from {
+      left: 0;
+      top: 0;
+  }
+  25%,
+  75% {
+      top: 100%;
+  }
+  50% {
+      top: 50%;
+  }
+  to {
+      left: 100%;
+      top: 0;
+  }
+}
+
+.ibader {
+  animation: ibader 7s infinite linear;
+}
+
+@keyframes ibader {
+  from {
+    border: 2px solid black;
+    position: absolute;
+    top: 8rem;
+    left: 15rem;
+    background-image: url(../IMG/p1.png);
+  }
+
+  25% {
+    border: 2px solid rgb(185, 77, 77);
+    position: absolute;
+    top: 8rem;
+    left: 15rem;
+    background-image: url(../IMG/p2.png);
+  }
+
+  50% {
+    border: 2px solid rgb(180, 218, 55);
+    position: absolute;
+    top: 8rem;
+    left: 15rem;
+    background-image: url(../IMG/p3.png);
+  }
+
+  to {
+    border: 4px solid rgb(54, 32, 220);
+    position: absolute;
+    top: 8rem;
+    left: 15rem;
+    background-image: url(../IMG/p4.png);
+  }
+}
